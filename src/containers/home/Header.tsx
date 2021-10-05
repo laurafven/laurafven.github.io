@@ -74,7 +74,7 @@ const Header: React.FC<{ tp: number }> = props => {
                 </a>{' '}
                 node.js apps.
             </P>
-            <H2>You have {props.tp || 0} points!</H2>
+            <H2>You have 1000000 points!</H2>
         </Container>
     );
 };
