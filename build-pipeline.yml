@@ -24,10 +24,10 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
-      - name: Add a secret
-        run: echo "Your password is a $SECRET"
+      - name: Use a secret
+        run: echo "Your password is a $PASSWORD"
         env:
-          SECRET: ${{secrets.PASSWORD}}
+          PASSWORD: ${{secrets.PASSWORD}}
   deploy:
     needs: build
     runs-on: ubuntu-latest
