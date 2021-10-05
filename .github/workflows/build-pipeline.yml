@@ -24,7 +24,7 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
-      - name: "Hello world when it's Monday"
+      - name: Use a secret
         run: echo "Your password is a $SECRET"
         env:
           SECRET: ${{secrets.PASSWORD}}
